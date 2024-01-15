@@ -3,7 +3,7 @@
 ==============================*/
 
 .shutter {
-    z-index: 9995;
+    z-index: 900;
     position: relative;
 
     &-left {
@@ -22,7 +22,7 @@
         #redvus_logo {
             width: 55%;
             height: auto;
-            opacity: 0;
+            //opacity: 0;
             // animation: fadeIn 2s;
 
             &_r,
@@ -68,7 +68,7 @@
         align-items: center;
         right: 0;
         bottom: 0;
-        // background-color: $layoutShutterBackground;
+        //background-color: transparent !important;
         position: fixed;
         // transition: background 0.8s;
 
@@ -77,42 +77,34 @@
             height: 3rem;
             cursor: pointer;
             position: absolute;
-            opacity: 0;
+            //opacity: 0;
+            //transform: translateX(-100%);
             // transform-origin: 50% 50%;
 
             &_v {
-                fill: $logoColorDark;
+                fill: $logoColorLight;
                 stroke: none;
             }
 
             &_left_line,
             &_right_line {
                 fill: none;
-                stroke: $logoColorDark;
+                stroke: $logoColorLight;
                 stroke-width: 0.4rem;
             }
 
             &_up_line,
             &_down_line {
                 fill: none;
-                stroke: $logoColorDark;
+                stroke: $logoColorLight;
                 stroke-width: 0.4rem;
                 opacity: 0;
             }
 
             &_cross {
                 fill: none;
-                stroke: $logoColorDark;
+                stroke: $logoColorLight;
                 stroke-width: 0.4rem;
-                // opacity: 0;
-            }
-        }
-
-        &__menu {
-            transform: translateX(-100%);
-
-            &--page {
-                transform: translateX(0);
             }
         }
 
@@ -131,7 +123,7 @@
                 width: 40%;
             }
 
-            ul.cd-navigation {
+            ul.nav-main {
 
 
                 li {
@@ -147,6 +139,13 @@
 
                         &:hover {
                             color: $menuLiColorHover;
+                        }
+                    }
+
+                    &.active {
+
+                        a {
+                            color: $secondary;
                         }
                     }
                 }
@@ -257,7 +256,7 @@
         // }
     }
 
-    @include grid-media($Small) {
+    @include grid-media($XSmall) {
 
         &-left {
             width: $shutterWidthMobile;
@@ -384,66 +383,3 @@
 }
 
 /*=====  End of Header  ======*/
-
-/*=============================================
-=                   Stop War                   =
-=============================================*/
-
-.event-top {
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    background-color: #2E222A;
-    user-select: none;
-    opacity: 0;
-    display: none;
-    z-index: -1;
-
-    #stopwarTop {
-        width: 100%;
-        height: 40vh;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-
-        svg {
-            width: auto;
-            height: 25vh;
-            fill: #fff;
-        }
-    }
-
-    #stopwarMiddle {
-        width: 100%;
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        svg {
-            width: auto;
-            height: 11.6vh;
-            fill: #FF4400;
-        }
-    }
-
-    #stopwarBottom {
-        width: 100%;
-        height: 40vh;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-
-        svg {
-            width: auto;
-            height: 25vh;
-            fill: #fff;
-        }
-    }
-}
-
-/*============  End of Stop War  =============*/

@@ -1,14 +1,14 @@
 
 
 function initMain() {
+    keyLock();
     scrollSmooth();
-    // sloganBeginLoad();
-    sloganTopLoad();
-    frontScroll();
+    sloganBeginLoad();
+    redvusMenuOpen();
 }
 
 function initMainMobile() {
-
+    // sloganBeginLoadMobile();
 }
 
 if (document.body.clientWidth > 820 || screen.width > 820) {
