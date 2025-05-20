@@ -1,7 +1,8 @@
 'use strict';
 
 function sloganBeginLoad() {
-    const wrapperBegin = document.querySelector('.wrapper-begin'),
+    const
+        wrapperBegin = document.querySelector('.wrapper-begin'),
         bodyBlock = document.body,
         containerSlogan = document.createElement('div'),
         // wrapperShutterLeft = document.createElement('div'),
@@ -377,17 +378,19 @@ function sloganBeginLoadMobile() {
                     .to(wrapperShutterLeft, {
                         duration: 0.4,
                         delay: "0.4",
-                        x: "-100%",
+                        y: "-100%",
                         zIndex: "-1"
                     })
                     .to(wrapperShutterRight, {
                         duration: 0.4,
                         delay: "-0.4",
-                        x: "100%",
+                        y: "100%",
                         zIndex: "-1"
                     })
                 ;
                 sloganTopLoad();
+                frontScrollMobile();
+                redvusLogoStartMobile();
             }
         });
 

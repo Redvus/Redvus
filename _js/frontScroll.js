@@ -1,6 +1,7 @@
 function frontScroll() {
 
-    const sectionFront_0 = document.getElementById('sectionFront_0'),
+    const
+        sectionFront_0 = document.getElementById('sectionFront_0'),
         sectionFront_1 = document.getElementById('sectionFront_1'),
         sectionFront_2 = document.getElementById('sectionFront_2'),
         sectionFront_3 = document.getElementById('sectionFront_3'),
@@ -32,7 +33,8 @@ function frontScroll() {
         scrollName = new ScrollChange();
     ;
 
-    const projectFrontAnim = new ProjectFront(),
+    const
+        projectFrontAnim = new ProjectFront(),
         projectTitle_0 = document.getElementById('projectTitle_0'),
         projectImage_0 = document.getElementById('projectImage_0'),
         projectLink_0 = document.getElementById('projectLink_0'),
@@ -71,9 +73,9 @@ function frontScroll() {
     // Benchmark
     scrollName.scrollChangeName(sectionFront_1, "#7e6f73", scrollMarker_1, scrollMarker_0);
     // SMIBS
-    scrollName.scrollChangeName(sectionFront_2, "#feba8b", scrollMarker_2, scrollMarker_1);
+    scrollName.scrollChangeName(sectionFront_2, "#c49176", scrollMarker_2, scrollMarker_1);
     // Listt
-    scrollName.scrollChangeName(sectionFront_3, "#f58229", scrollMarker_3, scrollMarker_2);
+    scrollName.scrollChangeName(sectionFront_3, "#a98470", scrollMarker_3, scrollMarker_2);
     // Goliaph
     scrollName.scrollChangeName(sectionFront_4, "#919292", scrollMarker_4, scrollMarker_3);
     // Forte
@@ -169,12 +171,12 @@ function frontScroll() {
         projectImage_5,
         projectImage_6);
 
-    projectFrontAnim.projectFrontSimple(
-        sectionFront_7,
-        projectTitle_7,
-        projectLink_7,
-        projectImage_6,
-        projectImage_7);
+    // projectFrontAnim.projectFrontSimple(
+    //     sectionFront_7,
+    //     projectTitle_7,
+    //     projectLink_7,
+    //     projectImage_6,
+    //     projectImage_7);
 
     // projectFrontAnim.projectFrontSimple(
     //     sectionFront_8,
